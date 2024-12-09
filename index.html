@@ -1,24 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Weather App</title>
+   <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <!--App container-->
     <div class="app">
       <h1>Weather App</h1>
-      <div class="search">
-        <input type="text" class="city" placeholder="Enter city name ">
-        <button class="search-btn">Get Weather</button>
-      </div>
-      <div class="weather">
-        <h1 class="city-name"></h1>
-        <p class="temp"></p>
-        <p class="description"></p>
+      <!--dropdown for city selection-->
+      <select class="city-selector">
+        <option value="55.6761,12.5683">Copenhagen</option>
+        <option value="56.1629,10.2039">Aarhus</option>
+        <option value="56.1629,10.2039">Odense</option>
+        <option value="57.0488,9.9217">Aalborg</option>
+      </select>
+      <button class="get-weather-btn">Get Weather</button>
+      <!--section to display weather information-->
+      <div class="weather-info">
+        <h2 class="city-name"></h2>
+        <p class="temperature"></p>
+        <p class="condition"></p>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
