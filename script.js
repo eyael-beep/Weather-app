@@ -57,5 +57,5 @@ function fetchWeather(coordinates) {
 function updateWeatherInfo(data) {
   cityName.textContent = data.name; // Update city name
   temperature.textContent = `Temperature: ${data.main.temp}°C`; // Update temperature
-  condition.textContent = `Condition: ${data.weather[0].description}`; // Update condition
+  condition.textContent = `Condition: ${data.weather[0].description}`; 
 }
